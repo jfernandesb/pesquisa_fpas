@@ -1,0 +1,353 @@
+/*Font Inter*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+/*------------------------------ Body ------------------------------*/
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: #616f7c;
+}
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+a {
+  color: #57636e;
+  text-decoration: none;
+  font:
+    bold 0.85rem "Inter",
+    sans-serif;
+}
+a:hover {
+  color: #c73741;
+  transition: 0.4s;
+}
+
+/*------------------------------ Main ------------------------------*/
+main {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+/*------------ Aviso de Atualização --------------*/
+#atualiza {
+  width: 220px;
+  height: 50%;
+  margin: 5% 2% 0 2%;
+  box-sizing: border-box;
+  font:
+    bold 12px "Inter",
+    sans-serif;
+  color: #a94442;
+  text-align: justify;
+  hyphens: auto;
+}
+.lista_atualiza {
+  width: 100%;
+  margin-top: 1rem;
+  list-style: none;
+  background: #f1dca7;
+  color: #a94442;
+  padding: 0.62rem;
+  box-sizing: border-box;
+  box-shadow: 1px 1px 4px rgb(58, 57, 57);
+  border-radius: 3px;
+}
+
+/*------------ Ferramenta --------------*/
+#ferramenta {
+  width: 65%;
+  align-self: center;
+  font:
+    normal 0.85rem "Inter",
+    sans-serif;
+  background: white;
+  margin-top: 5%;
+  padding: 1.25rem;
+  text-align: center;
+  color: #555;
+  border-radius: 3px;
+  box-sizing: border-box;
+  box-shadow: 1px 1px 4px rgb(58, 57, 57);
+}
+#tit_ferramenta {
+  width: 100%;
+  font-family: "Inter", sans-serif;
+}
+.sub_tit_ferramenta {
+  color: #af3038;
+}
+h1 {
+  font-size: 2rem;
+  font-style: bold;
+}
+h2 {
+  font-size: 1.2rem;
+  font-style: bold;
+  color: #af3038;
+}
+h3 {
+  font-size: 1.5rem;
+  font-style: bold;
+}
+p {
+  text-indent: 1rem;
+  text-align: left;
+  line-height: 22px;
+  margin: 0 0 3% 0;
+}
+form {
+  margin: auto;
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.formulario {
+  box-sizing: border-box;
+  height: 38px;
+  width: 100%;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+label {
+  width: 200px;
+  font:
+    bold 0.85rem "Inter",
+    sans-serif;
+  margin-right: 0.75rem;
+  color: #57636e;
+}
+select {
+  width: 200px;
+  height: 35px;
+  color: #555;
+  border-color: #ddd;
+  border-radius: 3px;
+  box-shadow: 0.5px 0.5px 0.5px 0.5px #ddd;
+  outline: none;
+}
+select:focus {
+  border: 1px solid #f08884;
+  transition: 0.5s;
+  box-shadow: 1px 1px 7px #c73741;
+}
+.input {
+  padding: 0;
+  width: 200px;
+  height: 30px;
+  color: #555;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  box-shadow: 0.5px 0.5px 0.5px 0.5px #ddd;
+  outline: none;
+  text-align: center;
+}
+.input:focus {
+  border: 1px solid #f08884;
+  transition: 0.1s;
+  box-shadow: 1px 1px 7px #c73741;
+}
+#bloco_botao {
+  margin: auto;
+  width: 100%;
+  height: 50px;
+  margin-top: 1.87rem;
+}
+.botao {
+  margin: auto;
+  width: 115px;
+  height: 33px;
+  background: #c73741;
+  color: white;
+  border-radius: 10px;
+  font:
+    bold 0.85rem "Inter",
+    sans-serif;
+  border-style: none;
+  cursor: pointer;
+}
+.botao:hover {
+  background: #b52630;
+  transition: 0.6s;
+}
+
+/*------------ Balão de Ajuda --------------*/
+.ajuda {
+  width: 12px;
+  border: none;
+  border-radius: 3px;
+  background: #c73741;
+  color: white;
+  font: bold 11px Arial;
+  margin-left: 2%;
+  margin-bottom: 0.94rem;
+  padding: 0;
+  cursor: pointer;
+}
+#ajuda_prim {
+  visibility: visible;
+}
+#ajuda_seg {
+  visibility: visible;
+}
+#ajuda_ter {
+  visibility: visible;
+}
+#ajuda_quar {
+  visibility: visible;
+}
+#ajuda_quin {
+  visibility: visible;
+}
+#ajuda_sex {
+  visibility: visible;
+}
+.esconder {
+  visibility: hidden;
+}
+.balao {
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  width: 80%;
+  padding: 0.5rem;
+  box-sizing: border-box;
+  box-shadow: 1px 4px 10px grey;
+  border-radius: 5px;
+  background: #ddd;
+}
+#balao_prim.show_balao {
+  opacity: 1;
+}
+#balao_seg.show_balao {
+  opacity: 1;
+}
+#balao_ter.show_balao {
+  opacity: 1;
+}
+#balao_quar.show_balao {
+  opacity: 1;
+}
+#balao_quin.show_balao {
+  opacity: 1;
+}
+#balao_sex.show_balao {
+  opacity: 1;
+}
+.sumir {
+  display: none;
+}
+
+/*------------ Avisos da Ferramenta --------------*/
+#aviso {
+  opacity: 0;
+  width: 80%;
+  background: #b4a275;
+  font:
+    normal 0.8rem "Inter",
+    sans-serif;
+  padding: 0.62rem;
+  margin: auto;
+  border-radius: 3px;
+  background: #dff4fc;
+  color: #a94442;
+  border: solid 1px transparent;
+  border-color: #bce8f1;
+}
+
+#aviso.show_result {
+  opacity: 1;
+}
+/*------------ Resultado --------------*/
+#resultado {
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+#resultado.show_result {
+  opacity: 1;
+}
+.overflow {
+  width: 100%;
+  overflow-x: auto;
+}
+.tit_resul {
+  background: #616f7c;
+  font:
+    normal 0.85rem "Inter",
+    sans-serif;
+  border-top: 1px solid #616f7c;
+  color: white;
+}
+table {
+  width: 100%;
+  border-spacing: 0;
+  border: 1px solid #616f7c;
+  margin: auto;
+  margin-top: 2.5rem;
+  font:
+    normal 0.75rem "Inter",
+    sans-serif;
+}
+tr {
+  height: 30px;
+}
+.titulo_tabela {
+  background-color: #616f7c;
+  color: white;
+}
+th {
+  background: #f2f2f2;
+  margin: 0;
+  padding: 5px;
+  width: 25%;
+  font-weight: bold;
+  border-right: 1px solid #616f7c;
+  border-bottom: 1px solid #616f7c;
+}
+td {
+  border-bottom: 1px solid #616f7c;
+}
+
+.td_sem_borda {
+  border: none;
+}
+.th_sem_borda {
+  border-bottom: none;
+}
+.grupo-fpas {
+  border-bottom: 25px solid transparent; /* espaço entre resultados */
+}
+.separador-fpas td {
+  height: 25px;
+  padding: 0;
+  border: none;
+  background: #616f7c;
+}
+/*----------------------- Media Header e Main ------------------------*/
+@media (max-width: 1000px) {
+  main {
+    justify-content: center;
+  }
+  #ferramenta {
+    width: 85%;
+    padding: 1rem;
+  }
+  #atualiza {
+    width: 300px;
+  }
+  .formulario {
+    height: 58px;
+  }
+  .input {
+    width: 170px;
+  }
+  select {
+    width: 170px;
+  }
+}
